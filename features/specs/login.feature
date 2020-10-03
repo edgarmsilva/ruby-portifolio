@@ -1,6 +1,6 @@
 #language: pt
 
-# Automação QA Challenge - AutomationPractice
+# Automação 
 # Autor: Edgar Moreira da Silva
 # 26/07/2018
 
@@ -8,7 +8,6 @@ Funcionalidade: Login
     Para que eu possa acessar minha conta
     Sendo um usuário cadastrado
     Posso logar no sistema
-
 
 Contexto: Página Inicial
         Dado que eu acessei a página inicial
@@ -23,7 +22,6 @@ Contexto: Página Inicial
     Esquema do Cenário: Logins inválidos
         Quando faço login com "<email>" e "<senha>"
         Então devo ver a mensagem de alerta "<alerta>"
-
         Exemplos: 
         | email                     | senha     | alerta                     |
         | edgarteste@edgarteste.com | 1234      | Invalid password.          |
@@ -31,9 +29,3 @@ Contexto: Página Inicial
         | testeed&testeed.com       | pass12345 | Invalid email address.     |
         |                           | pass12345 | An email address required. |
         | edgarteste@edgarteste.com |           | Password is required.      |
-
- 
-
-
-        
-    

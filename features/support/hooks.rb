@@ -1,3 +1,7 @@
-After("@Logout") do
-  find(".logout").click
+Before() do
+  @mainPage = WebSite.new
 end
+
+# After() do
+#   find(".logout").click
+# end

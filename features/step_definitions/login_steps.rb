@@ -1,13 +1,11 @@
 Dado("que eu acessei a página inicial") do
-  visit "http://automationpractice.com/index.php"
+  # visit "index.php"
+  visit "/"
 end
 
 Quando("faço login com {string} e {string}") do |email, senha|
   @email = email
-  find(".header_user_info").click
-  find("#email").set email
-  find("#passwd").set senha
-  find("#SubmitLogin").click
+  @mainPage.login(email, senha)
 end
 
 Então("sou autenticado com sucesso") do
